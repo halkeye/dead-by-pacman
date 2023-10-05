@@ -25,5 +25,10 @@ func _physics_process(delta):
 		velocity.y = y_direction * speed
 	else:
 		velocity.y = move_toward(velocity.y, 0, speed)
+		
+	if velocity.x == 0 && velocity.y == 0:
+		animated_sprite_2d.play("idle")
+	else:
+		animated_sprite_2d.play("walk")
 
 	move_and_slide()
