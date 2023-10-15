@@ -1,7 +1,7 @@
 [gd_scene load_steps=13 format=3 uid="uid://dfpp5a7occ2ao"]
 
 [ext_resource type="Texture2D" uid="uid://dr4ovih1bmbvv" path="res://sprites/2d_animation_frog_spritesheet.png" id="1_j10n5"]
-[ext_resource type="Script" path="res://scenes/pacman.gd" id="1_w8rla"]
+[ext_resource type="Script" path="res://scripts/pacman.gd" id="1_w8rla"]
 
 [sub_resource type="AtlasTexture" id="AtlasTexture_dqq3m"]
 atlas = ExtResource("1_j10n5")
@@ -78,7 +78,6 @@ animations = [{
 script = ExtResource("1_w8rla")
 
 [node name="AnimatedSprite2D" type="AnimatedSprite2D" parent="."]
-position = Vector2(356, 364)
 sprite_frames = SubResource("SpriteFrames_3ffp7")
 animation = &"idle"
 
